@@ -1,9 +1,14 @@
 {
-  "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
+    "lib": ["ES2015", "DOM"],
+    "target": "ES5",
+    "module": "CommonJS",
+    "outDir": ".build",
     "rootDir": ".",
-    "outDir": "build",
-    "esModuleInterop": true
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "test/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
