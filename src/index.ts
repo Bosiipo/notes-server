@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
-
+import "@types/dotenv";
+import "@types/node";
 const requiredEnvironmentVariables = ["DATABASE_URL"];
 
 for (let requiredVariable of requiredEnvironmentVariables) {
