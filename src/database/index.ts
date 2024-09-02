@@ -1,5 +1,3 @@
-import "@types/mongoose";
-import "@types/dotenv";
 import dotenv from "dotenv";
 dotenv.config();
 import mongoose from "mongoose";
