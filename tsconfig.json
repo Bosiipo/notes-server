@@ -3,7 +3,7 @@
     "lib": ["ES2015", "DOM"],
     "target": "ES5",
     "module": "CommonJS",
-    "outDir": ".build",
+    "outDir": "build",
     "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
