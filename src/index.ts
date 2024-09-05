@@ -11,6 +11,7 @@ for (let requiredVariable of requiredEnvironmentVariables) {
 
 import express, { RequestHandler } from "express";
 import bodyParser from "body-parser";
+import cors from "cors";
 
 import connectMongoose from "./database/index";
 
@@ -23,6 +24,7 @@ function initServer() {
   app.use(bodyParser.json() as RequestHandler);
   app.use(bodyParser.urlencoded({ extended: false }) as RequestHandler);
 
+  app.use(cors());
   app.get("/", async (req, res) => {
     const parsedUrl = parse(req.url, true);
     const { query } = parsedUrl;
